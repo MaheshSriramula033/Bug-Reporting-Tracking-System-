@@ -1,8 +1,10 @@
-git clone https://github.com/MaheshSriramula033/Bug-Reporting-Tracking-System-
-cd yourrepo
-npm install
+git clone https://github.com/MaheshSriramula033/Bug-Reporting-Tracking-System.git
+- cd Bug-Reporting-Tracking-System
+- npm install
 cp .env.example .env
-# Fill in your MongoDB URI and session secret
+### Edit .env and fill in:
+ - MONGODB_URI (your MongoDB connection string)
+ - SESSION_SECRET (a secret string for sessions)
 npm start
 ### User Schema
 - name: String
@@ -25,6 +27,6 @@ npm start
 
 - ### AI Usage Notes
 Used ChatGPT to:
-- Help structure Express routes.
-- Debug flash message visibility.
-- boilerplate creation.
+- Structure Express routes efficiently.
+- Debug issues with flash messages visibility.
+- Generate boilerplate code to accelerate development.
