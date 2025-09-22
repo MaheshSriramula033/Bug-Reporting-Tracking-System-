@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+<h2>Report a Bug</h2>
+<form method="post" action="/bugs">
+  <div class="mb-2">
+    <label class="form-label">Title</label>
+    <input name="title" class="form-control" required/>
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Description</label>
+    <textarea name="description" class="form-control"></textarea>
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Severity</label>
+    <select name="severity" class="form-select">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+<%- include('../partials/footer') %>

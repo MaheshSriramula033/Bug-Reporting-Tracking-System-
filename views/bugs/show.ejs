@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<h2><%= bug.title %></h2>
+<p><strong>Severity:</strong> <%= bug.severity %></p>
+<p><strong>Status:</strong> <%= bug.status %></p>
+<p><strong>Reporter:</strong> <%= bug.reporter ? bug.reporter.name : 'N/A' %></p>
+<p><strong>Created:</strong> <%= bug.createdAt.toLocaleString() %></p>
+<hr>
+<p><%= bug.description || '(No description)' %></p>
+<hr>
+<a class="btn btn-outline-secondary" href="/bugs/<%= bug._id %>/edit">Edit</a>
+<a class="btn btn-secondary" href="/dashboard">Back</a>
+<%- include('../partials/footer') %>

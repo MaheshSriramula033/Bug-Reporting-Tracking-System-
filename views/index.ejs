@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<div class="text-center py-5">
+  <h1>Bug Reporting & Tracking System</h1>
+  <p class="lead">Report bugs, track status, and manage issues.</p>
+  <% if (currentUser) { %>
+    <a class="btn btn-primary" href="/dashboard">Go to Dashboard</a>
+  <% } else { %>
+    <a class="btn btn-primary" href="/register">Get started</a>
+  <% } %>
+</div>
+<%- include('partials/footer') %>

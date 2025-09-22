@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+<h2>All Users</h2>
+<table class="table table-sm">
+  <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Created</th></tr></thead>
+  <tbody>
+  <% users.forEach(u => { %>
+    <tr>
+      <td><%= u.name %></td>
+      <td><%= u.email %></td>
+      <td><%= u.role %></td>
+      <td><%= u.createdAt.toLocaleString() %></td>
+    </tr>
+  <% }) %>
+  </tbody>
+</table>
+<%- include('../partials/footer') %>
